@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+#navbarNav {
+  justify-content: space-between;
+}
+.nav-link:hover {
+  transition: 300ms;
+  color: red;
+}
+
+.navbar-nav {
+  margin: 0 50px;
+}
+.carousel {
+  margin-top: 50px;
+}
+.carousel-item {
+  height: 75vh;
+  position: relative;
+}
+
+.carousel-caption {
+  top: 45%;
+}
+.carousel-caption h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.carousel-caption a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: white;
+  transition: 300ms;
+}
+
+.carousel-caption a:hover {
+  background-color: #f8024d;
+  border-color: #f8024d;
+  transform: translateY(-5px);
+}
+
+.about {
+  display: flex;
+  margin: 100px 0;
+}
+.about .left {
+  width: 40%;
+  padding: 50px;
+}
+.about .left img {
+  width: 100%;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about .right {
+  padding: 50px;
+  width: 60%;
+}
+.about .right h1 {
+  margin: 10px 0;
+  font-weight: 800;
+  font-size: 50px;
+}
+.about .right p {
+  font-size: large;
+  width: 70%;
+  color: gray;
+  margin: 20px 0;
+}
+.about .right button {
+  background-color: #f8024d;
+  color: white;
+  transition: 300ms;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid #f8024d;
+}
+.about .right button:hover {
+  background-color: white;
+  color: #f8024d;
+}
+.product-c {
+  background: url("https://technotrends.com.pk/wp-content/uploads/2020/08/bg-image-3-overlay.jpg")
+    center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 50px;
+  height: 80vh;
+  color: white;
+}
+.product-c h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 50px;
+}
+.product-c div {
+  display: flex;
+  justify-content: space-around;
+}
+.product-c div a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+  height: 50vh;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+}
+.product-c div a:hover {
+  transform: scale(1.05, 1.05);
+  color: #f8024d;
+}
+.product-c div a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.product-c div a span {
+  z-index: 1;
+  font-size: 25px;
+}
+
+.p-banner {
+  background: url("https://technotrends.com.pk/wp-content/uploads/2020/08/bg-image-5.jpg")
+    top/cover no-repeat;
+  margin-top: 50px;
+  height: 35vh;
+  font-weight: 600;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.all_products {
+  padding: 100px;
+}
+.all_products .box {
+  display: flex;
+  align-items: center;
+}
+
+.all_products .box:nth-of-type(even) {
+  background-color: #535353;
+  color: white;
+}
+.all_products .box:nth-of-type(odd) {
+  background-color: #d0d0d0;
+}
+
+.all_products .box button {
+  background-color: #f8024d;
+  color: white;
+  transition: 300ms;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid #f8024d;
+}
+.all_products .box button:hover {
+  background-color: white;
+  color: #f8024d;
+}
+
+.all_products .box h2 {
+  font-weight: 800;
+}
+.all_products .box h3 {
+  margin: 30px 0;
+  color: #f8024d;
+}
+.all_products .box ul li {
+  margin: 10px 0;
+}
+
+.all_products .box .yes {
+  color: green;
+  font-weight: bold;
+}
+.all_products .box .no {
+  color: red;
+  font-weight: bold;
+}
+
+.all_products .box .left {
+  padding: 10px;
+  width: 40%;
+}
+.all_products .box .right {
+  padding: 0 20px;
+  width: 60%;
+}
+.all_products .box img {
+  width: 100%;
+}
+
+.c-banner {
+  background: url("https://technotrends.com.pk/wp-content/uploads/2023/09/bg-image-3.jpg")
+    top/cover;
+  margin-top: 50px;
+  height: 35vh;
+  font-weight: 600;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .top {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.contact .top div {
+  width: 30%;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  border-radius: 5px;
+  transition: 300ms;
+}
+.contact .top div:hover {
+  background-color: #f8024d;
+  color: white;
+  transform: translateY(-10px);
+}
+.contact .top div:hover i {
+  color: white;
+}
+
+.contact .top div h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.contact i {
+  color: #f8024d;
+  margin-right: 10px;
+}
+.contact .bottom {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+.contact .bottom .left {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact .bottom .left h2 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.contact form button {
+  margin: 20px 0;
+  background-color: #f8024d;
+  padding: 15px 0;
+  width: 40%;
+  color: white;
+  font-size: large;
+  border: 2px solid #f8024d;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.contact form button:hover {
+  background-color: transparent;
+  transform: translateY(-5px);
+  color: #f8024d;
+}
+
+.contact .bottom .right {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact .bottom .right img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  background: url("https://technotrends.com.pk/wp-content/themes/trydo/assets/images/bg/bg-image-1.jpg")
+    no-repeat center/cover;
+  color: white;
+}
+footer > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer .left {
+  width: 30%;
+  padding: 20px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+footer .right {
+  width: 30%;
+}
+footer ul li {
+  margin: 5px 0;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer i {
+  margin: 0 5px;
+}
+footer img {
+  width: 20%;
+}
+footer p {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
